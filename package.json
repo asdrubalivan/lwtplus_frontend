@@ -5,6 +5,9 @@
   "repository": "https://github.com/asdrubalivan/lwtplus_frontend.git",
   "author": "Asdrúbal Suárez <asdrubal.ivan.suarez.rivera@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "dependencies": {
     "html-webpack-plugin": "^2.28.0",
     "path": "^0.12.7",
