@@ -1,4 +1,4 @@
-import actions from './actions';
+import { actions } from './actions';
 import Immutable from 'immutable';
 
 const initialState = Immutable.fromJS({
@@ -13,7 +13,7 @@ const reducer = (state = initialState, action) => {
   switch(action.type) {
     case actions.ADD_TEXT:
       return state.set('textData',action.textData);
-    default:
+    default: 
       return state;
   }
 }

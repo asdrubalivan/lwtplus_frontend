@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import { combineReducers } from 'redux-immutable';
-import { reducer as textReducer } from './text/reducer';
+import { default as textReducer }  from './text/reducer';
 
 const rootReducer = combineReducers({textReducer});
 
