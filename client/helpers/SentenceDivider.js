@@ -1,4 +1,5 @@
 export default class SentenceDivider {
+    //TODO Delete unneeded parameters
     constructor(text, removeSpaces, splitEachChar, regexSplitSentences) {
         this.text = text;
         this.removeSpaces = removeSpaces;
@@ -9,13 +10,5 @@ export default class SentenceDivider {
     get sentences() {
         let unprocessed = this.text.split(this.regexSplitSentences);
         return unprocessed.map((txt) => txt.trim()).filter((txt) => txt);
-    }
-
-    get words() {
-        if (this.splitEachChar) {
-            return this.text.split('');
-        } else {
-            return this.text.match(/\b(\w+)\b/g);
-        }
     }
 }
