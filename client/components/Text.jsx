@@ -34,8 +34,9 @@ class Text extends Component {
     }
     get sentences () {
         let mySentences = this.divider.sentences;
-        return mySentences.map((sentence, i)=> (
-            <Sentence key={i} text={sentence} />
+        const { knownWords } = this.props;
+        return mySentences.map((sentence, i) => (
+            <Sentence key={ i } text={ sentence } words={ knownWords } />
         ));
     }
 
