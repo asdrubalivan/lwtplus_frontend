@@ -1,4 +1,4 @@
-export default class WordDivider {
+export default class SentenceDivider {
     constructor(text, removeSpaces, splitEachChar, regexSplitSentences) {
         this.text = text;
         this.removeSpaces = removeSpaces;

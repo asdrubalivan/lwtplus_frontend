@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Word from './Word.jsx';
 import Sentence from './Sentence.jsx';
-import WordDivider from '../helpers/WordDivider';
+import SentenceDivider from '../helpers/SentenceDivider';
 
 class Text extends Component {
     static defaultProps = {
@@ -30,7 +30,7 @@ class Text extends Component {
     };
 
     get divider() {
-        return new WordDivider(this.props.text, false, this.props.splitChars, /[.!?:;]/g);
+        return new SentenceDivider(this.props.text, false, this.props.splitChars, /[.!?:;]/g);
     }
     get sentences () {
         let mySentences = this.divider.sentences;
