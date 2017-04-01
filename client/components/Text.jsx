@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Word from './Word.jsx';
+import Sentence from './Sentence.jsx';
 import WordDivider from '../helpers/WordDivider';
 
 class Text extends Component {
@@ -31,6 +32,12 @@ class Text extends Component {
     get divider() {
         return new WordDivider(this.props.text, false, this.props.splitChars, /[.!?:;]/g);
     }
+    get sentences () {
+        let mySentences = this.divider.sentences;
+        return mySentences.map((sentence, i)=> (
+            <Sentence key={i} text={sentence} />
+        ));
+    }
 
     /*
      * Algorithm
@@ -42,12 +49,9 @@ class Text extends Component {
      *
         * */
     render() {
-        console.log(this.divider.sentences);
-        console.log(this.divider.words);
         return (
-            <div>
-                Amet eligendi soluta similique atque optio. Aspernatur repudiandae ullam eveniet sapiente ab. Natus recusandae praesentium sit obcaecati ab incidunt ducimus nam, quas incidunt id? Ipsam porro animi nisi impedit quis?
-                
+            <div className="sentence-body">
+                {this.sentences}
             </div>
         );
     }
