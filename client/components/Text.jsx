@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Word from './Word.jsx';
 import Sentence from './Sentence.jsx';
 import SentenceDivider from '../helpers/SentenceDivider';
+import { connect } from 'react-redux';
 
 class Text extends Component {
     static defaultProps = {
@@ -73,4 +74,6 @@ const styles = {
     }
 };
 
-export default Text;
+const mapStateToProps = state => ({...state});
+
+export default connect(Text, mapStateToProps);
