@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
-class Word extends Component {
+class Word extends PureComponent {
     //Props
     //word id
     //word status
