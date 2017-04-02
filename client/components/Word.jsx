@@ -27,3 +27,5 @@ class Word extends Component {
         );
     }
 }
+
+export default Word;
