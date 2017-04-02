@@ -74,6 +74,8 @@ const styles = {
     }
 };
 
-const mapStateToProps = state => ({...state});
+const mapStateToProps = state => (
+    state.get('text').toJS()
+);
 
 export default connect(mapStateToProps)(Text);
