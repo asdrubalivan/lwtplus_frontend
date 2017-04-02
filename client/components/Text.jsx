@@ -76,4 +76,4 @@ const styles = {
 
 const mapStateToProps = state => ({...state});
 
-export default connect(Text, mapStateToProps);
+export default connect(mapStateToProps)(Text);
