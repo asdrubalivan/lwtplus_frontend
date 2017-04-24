@@ -2,7 +2,14 @@ $word-unknown-color: gray;
 $word-learning-color: yellow;
 $word-almost-learned-color: orange;
 $word-known-color: green;
+$margin-word: 5px;
 
+.word {
+    margin-right: $margin-word;
+    margin-bottom: $margin-word;
+    padding: 3px;
+    border-radius: 10px;
+}
 
 .word-unknown {
     background-color: $word-unknown-color;
