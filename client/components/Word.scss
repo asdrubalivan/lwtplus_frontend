@@ -1,0 +1,22 @@
+$word-unknown-color: gray;
+$word-learning-color: yellow;
+$word-almost-learned-color: orange;
+$word-known-color: green;
+
+
+.word-unknown {
+    background-color: $word-unknown-color;
+}
+
+.word-learning {
+    background-color: $word-learning-color;
+}
+
+.word-almost-learned {
+    background-color: $word-almost-learned-color;
+}
+
+.word-known {
+    background-color: $word-known-color;
+}
+

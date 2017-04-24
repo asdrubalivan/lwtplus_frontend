@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react';
+import './Word.scss';
 
 class Word extends PureComponent {
     //Props
