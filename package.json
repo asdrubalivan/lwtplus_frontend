@@ -6,7 +6,9 @@
   "author": "Asdrúbal Suárez <asdrubal.ivan.suarez.rivera@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build-css": "node-sass client/ -o client/",
+    "watch-css": "yarn run build-css && node-sass client/ -o client/ --watch --recursive"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.23.0",
